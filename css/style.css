@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins&family=Raleway&display=swap');
+
+
+
+*{
+margin: 0;
+padding: 0;
+}
+
+.bgPrimary{
+    background-color: #F2D5C4;
+}
+
+.bgSecundary{
+    background: #FEF6F0;
+    
+}
+
+.bgTryrd{
+    background: #FFFBF7;
+
+}
+
+.center{
+    text-align: center;
+    font-size: 60px;
+}
+
+/* Estilo menu*/
+nav{
+    display: flex;
+    align-items: center; /* alinha na vertical da pagina*/
+    justify-content: space-between; /* alinha na horizontal*/
+    height: 60px;
+    padding: 0 45px;
+}
+
+/* Estilo menu*/
+
+nav h3{
+    font-size: 2rem; /*rem - deixa do tamanho padrao do navegador do usuario*/
+    font-family: 'Raleway', sans-serif; /*para trazer o import */
+    text-transform: uppercase; /* transforma rexto em maiuscula*/
+
+}
+ 
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    text-align:center;
+
+}
+
+.imgFundo{
+    background-image: url('../img/background\ image.jpeg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 450px;
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* alinha na horizontal da pagina no começo*/
+    justify-content: space-around;
+    height: 400px;
+    width: 25%;
+    padding-left: 100px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.details input{
+    width: 80%;
+    height: 40px;
+    padding: 0 16px;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+}
+
+.details input:focus{
+    outline: none;
+    
+}
+
+.details button{
+    width: 60%;
+    height: 40px;
+    background: #463232;
+    font-family: 'Poppins', sans-serif;
+    color: #FFF;
+    font-size: 1.3rem ;
+    border: none;
+    outline: none; /* none- nao quero que apareça*/
+
+}
+
+.empresas{
+    text-align: center;
+    color: #9e9ea7;
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+    padding: 15px;
+    
+}
+
+.logos{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 25px o;
+}
+
+.produtos{
+    display: flex;
+    justify-content: space-evenly;
+    height: 650px;
+}
+
+.produtoUnico{
+    font-family: 'Poppins',sans-serif;
+    width: 40%;
+    color: #0d0c22;;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+
+}
+
+#comprar{
+    width: 40%;
+    height: 50px;
+    background: #463232;
+    font-family: 'Poppins', sans-serif;
+    color: #FFF;
+    font-size: 1.3rem ;
+    border: none;
+    outline: none;
+}
+
+#detalhes{
+    width: 40%;
+    height: 50px;
+    background: #FFF;
+    color: #463232;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem ;
+    border: 1px solid#463232 ;
+
+}
