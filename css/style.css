@@ -172,6 +172,17 @@ h3{
     font-size: 50px;
 
 }
+
+.trace:first-child {
+    border-right: 2px solid;
+    padding-right: 150px;
+}
+
+.trace:last-child {
+    border-left: 2px solid;
+    padding-left: 150px;
+}
+
 h4{
     color: #463232;
     font-family: 'Poppins', sans-serif;
