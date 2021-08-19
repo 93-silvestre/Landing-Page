@@ -16,7 +16,7 @@
         <!--Criando nav bar-->
         <h3>Wildiling</h3>
         <!--Logo em titulo-->
-        <div>
+        <div class="menu">
             <a href="#">Manufacturing</a>
             <!--direcionando partes -->
             <a href="#">Packaging</a>
@@ -24,15 +24,34 @@
             <a href="#">Delivery</a>
         </div>
         <div>
-            <img src="./img/login.png" alt="Icone de Usuário">
+            <img src="./img/user.png" alt="Icone de Usuário" id="myBtn">
             <!--para pegar imagem-->
-            <img src="./img/shopping-cart.png" alt="Icone do Carrinho">
+            <img src="./img/trolley.png" alt="Icone do Carrinho" id="myBtn">
+
+            <img src="./img/menu-of-three-lines.png" alt="Icone Menu" id="myBtn">
         </div>
     </nav>
 
+    <div id="myModal" class="modal">
+        <!--criando login pela imagme do icone de usuario-->
+        <div class="modal-content">
+            <span class="close">&times; </span> <!-- &times- cria X para fechar janela-->
+            <div class="inputModal">
+                <h3>Wildiling</h3>
+                <p> Cadastre-se para ter acesso a centenas de produtos!</p>
+                <input type="text" placeholder="Digite seu email">
+                <input type="password" placeholder="Digite sua senha">
+                <!--placeholder - texto que fica dentro do input para ser exemplo-->
+                <button type="submit">Entrar</button>
+                <!--submit - para iniciar o enter/ diz que é um botao para enviar informação-->
+            </div>
+        </div>
+    </div>
+
     <div class="bgPrimary imgFundo">
         <!-- DIVISÃO GENERECIA / divisão da pagina-->
-        <h1> protecting the beauty!</h1>
+        <h1>protecting the beauty!</h1>
+
         <section class="details">
             <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi amet dolorem unde ipsa aspernatur, magnam
@@ -42,21 +61,21 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque dolore quaerat quis iste, laudantium
                 commodi.
             </p>
-            <input type="text" placeholder="Search here...">
-            <!--placeholder - para aparecer mensagem-->
+            <input type="text" placeholder="Search here..." id="searchHadere" onkeyup="validaCampo()" />
+            <!--placeholder - para aparecer mensagem , onkeyup - quando tira o cursor-->
             <button type="submit"> VIEW DETAIL</button>
         </section>
     </div>
 
     <section class="bgSecundary">
         <h3 class="empresas">SOME OF OUR LENDERS</h3>
-        <div class="logo">
-            <img src="./img/logo-generico.png" alt="logo da marca" height="60px">
-            <img src="./img/logo-generico.png" alt="logo da marca" height="60px">
-            <img src="./img/logo-generico.png" alt="logo da marca" height="60px">
-            <img src="./img/logo-generico.png" alt="logo da marca" height="60px">
-            <img src="./img/logo-generico.png" alt="logo da marca" height="60px">
-            <img src="./img/logo-generico.png" alt="logo da marca" height="60px">
+        <div class="logos">
+            <img src="./img/logo-chase.png" alt="logo da marca" height="90px">
+            <img src="./img/logo-asana.png" alt="logo da marca" height="90px">
+            <img src="./img/logo-google.png" alt="logo da marca" height="90px">
+            <img src="./img/logo-buzzfeed.png" alt="logo da marca" height="90px">
+            <img src="./img/logo-toggl.png" alt="logo da marca" height="90px">
+            <img src="./img/logo-walmart.png" alt="logo da marca" height="9v0px">
         </div>
     </section>
 
@@ -64,18 +83,18 @@
         <div class='produtoUnico'>
             <h2>about us</h2>
             <p>
-                Improves Iymphatic function, resulting in a naturally dewy,glowing complexion.
+                Improves Iymphatic function, resulting in a naturally dewy,glowing complexion,
             </p>
             <button type="submit" id="comprar">BUY NOW</button>
             <div>
-                <img src="./img/1.jpeg" alt="Imagem do Produto 1" height="450px" />
+                <img src="./img/1.jpeg" alt="Imagem do Produto 1" height="600px" />
             </div>
         </div>
 
 
         <div class='produtoUnico'>
             <div>
-                <img src="./img/2.jpeg" alt="Imagem do Produto 2" height="450px" />
+                <img src="./img/2.jpeg" alt="Imagem do Produto 2" height="600px" />
             </div>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
@@ -88,67 +107,131 @@
 
 
     <section>
-        <div class="produtoUnico">
-            <h2 class="center">products</h2>
-            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-
+        <div class="products">
+            <h2>products</h2>
+            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. laboriosam officia saepe mollitia.
             </p>
         </div>
+    </section>
 
-        <div>
+    <section class='produtos'>
+        <div class="produtoUnico">
+            <img src="./img/3.jpeg" alt="" height="600px">
+            <h3> express tonic</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam, dignissimos itaque inventore
+                possimus, facilis nobis mollitia vel nam maxime alias eaque officiis excepturi dolore,
+                voluptatum
+                sit. Nostrum illo officia adipisci?
+            </p>
+
+        <!-- <div>
+                <h3>100%</h3>
+                <p>Organic Products</p>
+            </div>
             <div>
-                <img src="./img/3.jpeg" alt="" height="450px">
-                <h3 class="produtoUnico"> express tonic</h3>
-                <div>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam, dignissimos itaque inventore
-                        possimus, facilis nobis mollitia vel nam maxime alias eaque officiis excepturi dolore,
-                        voluptatum
-                        sit. Nostrum illo officia adipisci?
-                    </p>
-                    <button type="submit" id="comprar">BUY NOW</button>
-                    <buttontype="submit" id="detalhes">ADD TO CART</button>
-                </div>
+                <h3>1M+</h3>
+                <p>Yearly Sales</p>
+            </div>
 
+            <div>
+                <h3>95%</h3>
+                <p>Happy Customers</p>
+            </div> -->
+
+            <div class="buttons">
+                <button type="submit" id="comprar">BUY NOW</button>
+                <button type="submit" id="detalhes">ADD TO CART</button>
             </div>
         </div>
 
-        <div>
-            <img src="./img/OIP.jfif" alt="" height="200px">
-            <h3> Produto2</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam, dignissimos itaque inventore possimus,
-                facilis nobis mollitia vel nam maxime alias eaque officiis excepturi dolore, voluptatum sit. Nostrum
-                illo officia adipisci?
+
+        <div class="produtoUnico">
+            <img src="./img/3.jpeg" alt="" height="600px">
+            <h3> higher self oil</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam, dignissimos itaque inventore
+                possimus, facilis nobis mollitia vel nam maxime alias eaque officiis excepturi dolore,
+                voluptatum
+                sit. Nostrum illo officia adipisci?
             </p>
-            <button>Comprar Agora</button>
-            <button>Adicionar ao Carrinho</button>
-        </div>
 
-        </div>
+           <!-- <div>
+                <h3>100%</h3>
+                <p>Organic Products</p>
+            </div>
+            <div>
+                <h3>1M+</h3>
+                <p>Yearly Sales</p>
+            </div>
+
+            <div>
+                <h3>95%</h3>
+                <p>Happy Customers</p>
+            </div>-->
+            <div class="buttons">
+                <button type="submit" id="comprar">BUY NOW</button>
+                <button type="submit" id="detalhes">ADD TO CART</button>
+            </div>
+
         </div>
     </section>
 
-    <section class="bgTryrd">
+    <section class="bgSecundary numbers">
         <div>
-            <h3>500+</h3>
-            <p>Lorem</p>
+            <h4>500+</h4>
+            <p>Organic Products</p>
         </div>
-
         <div>
-            <h3>500+</h3>
-            <p>Lorem</p>
+            <h4>100+</h4>
+            <p>International Franchises</p>
         </div>
-
         <div>
-            <h3>500+</h3>
-            <p>Lorem</p>
+            <h4>1 Million+</h4>
+            <p>Sales trough-out the World</p>
         </div>
     </section>
 
-    <footer>
-        <!--rodapé do site -->
-        <p> &copy; WILDILING. Todos os direitos reservados</p>
-    </footer>
 
+    <section class='footer'>
+        <div class='social'>
+          <!-- redes sociais -->
+          <h3>WILDLING</h3>
+          <p>Sufficient particular impossible by reasonable oh expression is. Yet preference unpleasant.</p>
+          <i class="fa fa-twitter-square" aria-hidden="true"></i>
+          <i class="fa fa-facebook-square" aria-hidden="true"></i>
+          <i class="fa fa-github-square" aria-hidden="true"></i>
+        </div>
+        <div class="footerItens">
+          <!-- menus de links -->
+          <div class="footerMenu">
+            <h3>Menu</h3>
+            <p>Donations</p>
+            <p>Features</p>
+            <p>Category</p>
+            <p>Volunteer</p>
+            <p>About Us</p>
+          </div>
+          <div class="footerMenu">
+            <h3>Categories</h3>
+            <p>Healthy Food</p>
+            <p>Education</p>
+            <p>Clean Water</p>
+            <p>Medical Help</p>
+          </div>
+          <div class="footerMenu">
+            <h3>About us</h3>
+            <p>Who are you?</p>
+            <p>Contact Us</p>
+            <p>FAQ</p>
+            <p>Help</p>
+          </div>
+        </div>
+      </section>
+      <hr>
+      <footer>
+        <p>&copy;Copyright: Wildling - All right reserved</p>
+      </footer>
+    <script src="./js/script.js"> </script>
+    <!--tag para linkar com script.js-->
 </body>
 
 </html>

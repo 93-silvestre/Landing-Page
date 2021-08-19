@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins&family=Raleway&display=swap');
 
 
-
 *{
 margin: 0;
 padding: 0;
+
 }
 
 .bgPrimary{
@@ -31,8 +31,27 @@ nav{
     display: flex;
     align-items: center; /* alinha na vertical da pagina*/
     justify-content: space-between; /* alinha na horizontal*/
-    height: 60px;
+    height: 100px;
     padding: 0 45px;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    width: 35%;
+  
+      
+}
+
+a{
+   text-decoration:none;
+   color: #463232;
+   font-family: "Poppins",sans-serif;
+       
+}
+
+a:hover{
+    font-weight: bold;
 }
 
 /* Estilo menu*/
@@ -43,20 +62,23 @@ nav h3{
     text-transform: uppercase; /* transforma rexto em maiuscula*/
 
 }
+
  
 h1{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 3rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 4.5rem;
     text-align:center;
-
+    color: #463232;
+   
+  
 }
 
 .imgFundo{
-    background-image: url('../img/background\ image.jpeg');
-    background-size: contain;
+    background-image: url('../img/background-menu2.jpeg');
+    background-size: 1050px 668px;
     background-repeat: no-repeat;
-    background-position: center;
-    height: 450px;
+    background-position: bottom;
+    padding-bottom: 50px;
 }
 
 .details{
@@ -98,7 +120,7 @@ h1{
 
 .empresas{
     text-align: center;
-    color: #9e9ea7;
+    color: #463232;
     font-size: 2rem;
     font-family: 'Poppins', sans-serif;
     padding: 15px;
@@ -108,44 +130,244 @@ h1{
 .logos{
     display: flex;
     justify-content: space-evenly;
-    padding: 25px o;
+    padding: 25px;
 }
 
 .produtos{
     display: flex;
     justify-content: space-evenly;
-    height: 650px;
+    height: 950px;
+    
 }
 
 .produtoUnico{
     font-family: 'Poppins',sans-serif;
     width: 40%;
-    color: #0d0c22;;
+    color: #0d0c22;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    
+}
 
+h2{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 75px;
+    color: #463232;
+    margin: 5%;
+}
+.products{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #9e9ea7;
+    margin: 5%;
+   
+}
 
+h3{
+    color: #463232;
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+
+}
+h4{
+    color: #463232;
+    font-family: 'Poppins', sans-serif;
+    font-size: 45px;
+    font-weight: bold;
+ }
+ 
+.numbers{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    padding: 35px 0;
+}  
+
+p{
+    font-family: 'Poppins', sans-serif;
+    color: #9e9ea7
 }
 
 #comprar{
-    width: 40%;
+    width: 30%;
     height: 50px;
     background: #463232;
     font-family: 'Poppins', sans-serif;
     color: #FFF;
-    font-size: 1.3rem ;
+    font-size: 1rem ;
     border: none;
     outline: none;
+    
 }
 
 #detalhes{
-    width: 40%;
+    width: 30%;
     height: 50px;
     background: #FFF;
     color: #463232;
     font-family: 'Poppins', sans-serif;
-    font-size: 1.3rem ;
+    font-size: 1rem ;
     border: 1px solid#463232 ;
+    margin: 8%;
+    
 
 }
+
+#myBtn{ /*cursor mãozinha*/
+    cursor: pointer;
+  }
+
+
+/*Esilo do Cdastra-se*/
+.modal {
+  display: none ;
+  position: fixed ; /*fixado*/
+  z-index: 1;/*para flutuar na frente de tudo da pagina*/
+  left: 0;/*movimenta a caixa*/
+  top: 0;
+  width: 100%; /*ocupa espaço*/
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);/*verm , verd , azul*/
+  background-color: rgba(0,0,0,0.5); /*verm, ved, azul,cinza*/
+  
+}
+
+.modal-content {
+    background-color: #f2d5c4;
+    margin: 10rem auto; /*centraliza o conteudo*/
+    padding: 20px;
+    border: 1px solid #463232; /*borda*/
+    border-radius: 5px;
+    width: 35%;
+
+}
+
+.modal-content h3{
+    font-size: 2rem;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 15px;
+}
+
+.inputModal{
+    display: block;/*p/funcionar como bloco*/
+    width: 60%;
+    margin: 0 auto;/*margem lateral automatica*/
+    align-items: center;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+.input-modal button{
+    width: 60%;
+    height: 60px;
+    background: #463232;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    font-size: 1.3rem;
+    border: none;
+    outline: none;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  .input-modal input{
+    width: 80%;
+    margin-top: 20px;
+    height: 1.9rem;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    padding: 5px 20px;
+  }
+  
+  .input-modal input:focus {
+    outline: none;
+  }
+.close{
+    color: #463232;
+    font-size: 28px;
+    font-weight: bold; /*negrito*/
+    float: right; /*flutuar a direita*/
+
+}
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*Estilo Footer*/
+.footer:hover, 
+.footer:focus{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+footer {
+    margin: 30px 0;
+    padding-top: 20px;
+    text-align: center;
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: space-evenly;
+    width: 70%;
+    margin: 25px auto;
+  }
+  
+  .footerItens {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    color: #b8b8b8;
+  }
+  
+  .footerMenu h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .footerMenu p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    color: #848484;
+  }
+  
+  .footerMenu p:hover {
+    color: #463232;
+  }
+  
+  .social h3 {
+    color: #463232;
+    font-size: 2rem;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 35px;
+  }
+  
+  .social p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    color: #848484;
+    width: 75%;
+  }
+  
+  .social i {
+    font-size: 2rem;
+    margin-right: 25px;
+    margin-top: 25px;
+  }
+  
+  .social{
+    width: 35%;
+    margin-right: 80px
+  }
+
+  /*Estilo Footer*/
