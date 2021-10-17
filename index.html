@@ -1,235 +1,157 @@
-<!doctype "HTML">
+<!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
-    <!-- cabeçalho / conexoes com outras paginas-->
-    <meta charset="UTF-8"> <!-- fonte de letras-->
-    <meta http-equiv="X-UA compatible" content="IE-edge">
-    <meta name="">
-    <title> Meu primeiro Site</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Feita em Aula</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
 </head>
+<nav class="navbar navbar-expand-lg navbar-light container cornavabar sticky-top"> <!--sticky-top / fixa navbar ao rolar a pagina-->
+    <!-- Just an image -->
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="./img/logo.png" width="auto" height="30" alt="" loading="lazy">
+        </a>
+    </nav>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+        aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+        <ul class="navbar-nav mr-auto centralizar-links">
+            <li class="nav-item active"> <!--active para configurar quando pagina esta ativa-->
+                <a class="nav-link" href="#">Home <span class="sr-only">(página atual)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+            </li>
+
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <button class="btn botaonavbar my-2 my-sm-0" type="submit">Get Started</button>
+        </form>
+    </div>
+</nav>
+
+<section class="container">
+    <div class="row cornavabar">
+        <div class="col md-4 chamadabox">
+            <h1>Lorem <br> ipsum dolor <br> sit amet <span>consectetur.</span> </h1>
+            <h3 class="mt-4 mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, perspiciatis.</h3><!--mt e mb para espaçar os textos-->
+            <button type="button" class="btn mb-3 botaonavbar ">Get Started</button>
+            <img src="./img/logos.jpg" alt="">
+        </div>
+        <div class="col-md-8">
+            <img src="./img/imagem-1.jpg" alt="" width="100%">
+        </div>
+    </div>
+    <div class="text-center my-5">
+        <button type="button" class="btn features my-3">FEATURES</button>
+        <h4>Our Core Features</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing <br> elit. Nam consequatur modi libero error placeat
+            repudiandae nihil illo quos.</p>
+    </div>
+
+    <div class="row my-5">
+        <div class="col-md-3">
+            <div class="d-flex flex-column">
+                <img src="./img/icon-1.jpg" height="50" alt="Icone 1" class="align-self-center mt-3">
+                <h5 class="text-center mb-4">All Format Plan</h5>
+                <p class="text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates quibusdam
+                    omnis.</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="d-flex flex-column">
+                <img src="./img/icon-2.jpg" height="50" alt="Icone 1" class="align-self-center mt-3">
+                <h5 class="text-center mb-4">Lorem, ipsum dolor.</h5>
+                <p class="text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates quibusdam
+                    omnis.</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="d-flex flex-column">
+                <img src="./img/icon-3.jpg" height="50" alt="Icone 1" class="align-self-center mt-3">
+                <h5 class="text-center mb-4">Lorem, ipsum dolor.</h5>
+                <p class="text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates quibusdam
+                    omnis.</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="d-flex flex-column">
+                <img src="./img/icon-4.jpg" height="50" alt="Icone 1" class="align-self-center mt-3">
+                <h5 class="text-center mb-4">Lorem, ipsum dolor.</h5>
+                <p class="text-center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates quibusdam
+                    omnis.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row fototexto rowsfototexto">
+        <div class="col-md-6">
+            <img src="./img/celular.jpg" alt="">
+        </div>
+        <div class="col-md-6 espacotexto">
+            <h2>Lorem ipsum dolor <br> sit amet consectetur adipisicing <br> elit. Id, cum!</h2>
+            <p>Lorem, ipsum dolor sit amet <br> consectetur adipisicing elit. Nemo assumenda quas cum rem in quis maxime
+                accusamus cupiditate.</p>
+            <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span>
+            <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span>
+            <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span>
+        </div>
+    </div>
+        <div class="row">
+            <div class="col-md-6 espacotexto">
+                <h2>Lorem ipsum dolor <br> sit amet consectetur adipisicing <br> elit. Id, cum!</h2>
+                <p>Lorem, ipsum dolor sit amet <br> consectetur adipisicing elit. Nemo assumenda quas cum rem in quis
+                    maxime
+                    accusamus cupiditate.</p>
+                <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span>
+                <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span>
+                <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span>
+            </div>
+            <div class="col-md-6">
+                <img src="./img/skeleton.jpg" alt="" height="300">
+            </div>
+        </div>
+   
+    <div class="row fototexto rowsfototexto">
+        <div class="col-md-6 espacotexto">
+            <img src="./img/celular-2.jpg" alt="">
+        </div>
+        <div class="col-md-6">
+            <h2>Lorem ipsum dolor <br> sit amet consectetur adipisicing <br> elit. Id, cum!</h2>
+            <p>Lorem, ipsum dolor sit amet <br> consectetur adipisicing elit. Nemo assumenda quas cum rem in quis maxime
+                accusamus cupiditate.</p>
+            <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span>
+            <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span>
+            <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</span>
+        </div>
+    </div>
+</section>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
 
 <body>
-    <!--definir estrutura titulo-->
-    <nav class="bgPrimary">
-        <!--Criando nav bar-->
-        <h3>Wildiling</h3>
-        <!--Logo em titulo-->
-        <div class="menu">
-            <a href="#">Manufacturing</a>
-            <!--direcionando partes -->
-            <a href="#">Packaging</a>
-            <a href="#">Farms</a>
-            <a href="#">Delivery</a>
-        </div>
-        <div>
-            <img src="./img/user.png" alt="Icone de Usuário" id="myBtn">
-            <!--para pegar imagem-->
-            <img src="./img/trolley.png" alt="Icone do Carrinho" id="myBtn">
 
-            <img src="./img/menu-of-three-lines.png" alt="Icone Menu" id="myBtn">
-        </div>
-    </nav>
-
-    <div id="myModal" class="modal">
-        <!--criando login pela imagme do icone de usuario-->
-        <div class="modal-content">
-            <span class="close">&times; </span> <!-- &times- cria X para fechar janela-->
-            <div class="inputModal">
-                <h3>Wildiling</h3>
-                <p> Cadastre-se para ter acesso a centenas de produtos!</p>
-                <input type="text" placeholder="Digite seu email">
-                <input type="password" placeholder="Digite sua senha">
-                <!--placeholder - texto que fica dentro do input para ser exemplo-->
-                <button type="submit">Entrar</button>
-                <!--submit - para iniciar o enter/ diz que é um botao para enviar informação-->
-            </div>
-        </div>
-    </div>
-
-    <div class="bgPrimary imgFundo">
-        <!-- DIVISÃO GENERECIA / divisão da pagina-->
-        <h1>protecting the beauty!</h1>
-
-        <section class="details">
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi amet dolorem unde ipsa aspernatur, magnam
-                doloremque saepe.
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque dolore quaerat quis iste, laudantium
-                commodi.
-            </p>
-            <input type="text" placeholder="Search here..." id="searchHadere" onkeyup="validaCampo()" />
-            <!--placeholder - para aparecer mensagem , onkeyup - quando tira o cursor-->
-            <button type="submit"> VIEW DETAIL</button>
-        </section>
-    </div>
-
-    <section class="bgSecundary">
-        <h3 class="empresas">SOME OF OUR LENDERS</h3>
-        <div class="logos">
-            <img src="./img/logo-chase.png" alt="logo da marca" height="90px">
-            <img src="./img/logo-asana.png" alt="logo da marca" height="90px">
-            <img src="./img/logo-google.png" alt="logo da marca" height="90px">
-            <img src="./img/logo-buzzfeed.png" alt="logo da marca" height="90px">
-            <img src="./img/logo-toggl.png" alt="logo da marca" height="90px">
-            <img src="./img/logo-walmart.png" alt="logo da marca" height="9v0px">
-        </div>
-    </section>
-
-    <section class='produtos'>
-        <div class='produtoUnico'>
-            <h2>about us</h2>
-            <p>
-                Improves Iymphatic function, resulting in a naturally dewy,glowing complexion,
-            </p>
-            <button type="submit" id="comprar">BUY NOW</button>
-            <div>
-                <img src="./img/1.jpeg" alt="Imagem do Produto 1" height="600px" />
-            </div>
-        </div>
-
-
-        <div class='produtoUnico'>
-            <div>
-                <img src="./img/2.jpeg" alt="Imagem do Produto 2" height="600px" />
-            </div>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
-                nostrum accusantium, placeat, error iste facere modi porro, doloremque
-                laboriosam officia saepe mollitia. Similique, dolorem beatae.
-            </p>
-            <button type="submit" id="detalhes">READ MORE</button>
-        </div>
-    </section>
-
-
-    <section>
-        <div class="products">
-            <h2>products</h2>
-            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. laboriosam officia saepe mollitia.
-            </p>
-        </div>
-    </section>
-
-    <section class='produtos'>
-        <div class="produtoUnico">
-            <img src="./img/3.jpeg" alt="" height="600px">
-            <h3> express tonic</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam, dignissimos itaque inventore
-                possimus, facilis nobis mollitia vel nam maxime alias eaque officiis excepturi dolore,
-                voluptatum
-                sit. Nostrum illo officia adipisci?
-            </p>
-
-        <!-- <div>
-                <h3>100%</h3>
-                <p>Organic Products</p>
-            </div>
-            <div>
-                <h3>1M+</h3>
-                <p>Yearly Sales</p>
-            </div>
-
-            <div>
-                <h3>95%</h3>
-                <p>Happy Customers</p>
-            </div> -->
-
-            <div class="buttons">
-                <button type="submit" id="comprar">BUY NOW</button>
-                <button type="submit" id="detalhes">ADD TO CART</button>
-            </div>
-        </div>
-
-
-        <div class="produtoUnico">
-            <img src="./img/3.jpeg" alt="" height="600px">
-            <h3> higher self oil</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam, dignissimos itaque inventore
-                possimus, facilis nobis mollitia vel nam maxime alias eaque officiis excepturi dolore,
-                voluptatum
-                sit. Nostrum illo officia adipisci?
-            </p>
-
-           <!-- <div>
-                <h3>100%</h3>
-                <p>Organic Products</p>
-            </div>
-            <div>
-                <h3>1M+</h3>
-                <p>Yearly Sales</p>
-            </div>
-
-            <div>
-                <h3>95%</h3>
-                <p>Happy Customers</p>
-            </div>-->
-            <div class="buttons">
-                <button type="submit" id="comprar">BUY NOW</button>
-                <button type="submit" id="detalhes">ADD TO CART</button>
-            </div>
-
-        </div>
-    </section>
-
-    <section class="bgSecundary numbers">
-        <div class="trace">
-            <h4>500+</h4>
-            <p>Organic Products</p>
-        </div>
-        <div class="trace">
-            <h4>100+</h4>
-            <p>International Franchises</p>
-        </div>
-        <div class="trace">
-            <h4>1 Million+</h4>
-            <p>Sales trough-out the World</p>
-        </div>
-    </section>
-
-
-    <section class='footer'>
-        <div class='social'>
-          <!-- redes sociais -->
-          <h3>WILDLING</h3>
-          <p>Sufficient particular impossible by reasonable oh expression is. Yet preference unpleasant.</p>
-          
-        </div>
-        <div class="footerItens"> <!-- MENU DE LINKS -->
-         
-          <div class="footerMenu">
-            <h3>Menu</h3>
-            <p>Donations</p>
-            <p>Features</p>
-            <p>Category</p>
-            <p>Volunteer</p>
-            <p>About Us</p>
-          </div>
-          <div class="footerMenu">
-            <h3>Categories</h3>
-            <p>Healthy Food</p>
-            <p>Education</p>
-            <p>Clean Water</p>
-            <p>Medical Help</p>
-          </div>
-          <div class="footerMenu">
-            <h3>About us</h3>
-            <p>Who are you?</p>
-            <p>Contact Us</p>
-            <p>FAQ</p>
-            <p>Help</p>
-          </div>
-        </div>
-      </section>
-      <hr>
-      <footer>
-        <p>&copy;Copyright: Wildling - All right reserved</p>
-      </footer>
-    <script src="./js/script.js"> </script>
-    <!--tag para linkar com script.js-->
-</body>
 
 </html>
